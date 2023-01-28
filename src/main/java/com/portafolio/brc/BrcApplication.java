@@ -1,0 +1,13 @@
+package com.portafolio.brc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BrcApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BrcApplication.class, args);
+	}
+
+}

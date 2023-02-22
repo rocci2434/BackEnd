@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.brc.Security.Controller;
 
 import com.portfolio.brc.Security.Dto.JwtDto;
@@ -91,5 +86,4 @@ public class AuthController {
         
         return new ResponseEntity(jwtDto, HttpStatus.OK);
     }
-    
 }

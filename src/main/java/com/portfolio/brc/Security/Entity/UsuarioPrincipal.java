@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.brc.Security.Entity;
 
 import java.util.Collection;
@@ -12,10 +7,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- *
- * @author Usuario
- */
 public class UsuarioPrincipal implements UserDetails {
 
     private String nombre;
@@ -83,5 +74,4 @@ public class UsuarioPrincipal implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
-
 }

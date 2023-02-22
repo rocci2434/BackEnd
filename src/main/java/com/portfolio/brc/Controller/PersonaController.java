@@ -1,4 +1,3 @@
-
 package com.portfolio.brc.Controller;
 
 import com.portfolio.brc.Dto.dtoPersona;
@@ -20,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"https://mgbfrontend.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200"})
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
@@ -90,5 +89,4 @@ public class PersonaController {
         
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
     }
-   
 }

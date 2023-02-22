@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.brc.Security.Dto;
 
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author Usuario
- */
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;
@@ -60,5 +51,4 @@ public class NuevoUsuario {
     public void setRoles(Set<String> roles) {
         this.roles = roles;
     }
-    
 }

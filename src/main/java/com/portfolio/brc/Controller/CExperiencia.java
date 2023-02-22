@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.brc.Controller;
 
 import com.portfolio.brc.Dto.dtoExperiencia;
@@ -26,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = {"https://mgbfrontend.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200"})
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
@@ -85,7 +80,6 @@ public class CExperiencia {
         experiencia.setDescripcionE((dtoexp.getDescripcionE()));
         
         sExperiencia.save(experiencia);
-        return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
-             
+        return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);       
     }
 }
